@@ -67,16 +67,12 @@ function colors(color) {
    switch (color){
       case 'blue':
          return 'This is blue';
-         break;
       case 'red':
          return 'This is red';
-         break;
       case 'green':
          return 'This is green';
-         break;
       case 'orange':
          return 'This is orange';
-         break;
       default:
          return 'Color not found';
    }
@@ -127,7 +123,7 @@ function fizzBuzz(num) {
    } else if (num % 3 === 0){
       return 'fizz';
    } else {
-      return false;
+      return false;  
    }
 }
 
@@ -196,8 +192,8 @@ function doWhile(num) {
    // Utilizar el bucle Do-While.
    let i = 0;
    do {
-      i = i + 1;
-      num = num + 5;
+      num += 5;
+      i++;
    } while (i < 8);
    return num;
 }
