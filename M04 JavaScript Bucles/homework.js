@@ -179,7 +179,7 @@ function esVerdadero(valor) {
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
-   if(num >= 100 && num < 1000){
+   if(num >= 100 && num <= 999){
       return true;
    } else {
       return false;
