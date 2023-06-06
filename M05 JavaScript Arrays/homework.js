@@ -18,11 +18,12 @@ function obtenerLargoDelArray(array) {
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
-   var masUno = [];
-   for(var i = 0; i < array.length; i++) {
-      masUno [i] = array [i] + 1;  
-   }
-   return masUno;
+   // var masUno = [];
+   // for(var i = 0; i < array.length; i++) {
+   //    masUno [i] = array [i] + 1;  
+   // }
+   // return masUno;
+   return array.map((element)=> element + 1);
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -50,22 +51,24 @@ function dePalabrasAFrase(palabras) {
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
-   for(let i = 0; i < array.length; i++) {
-      if(array [i] === elemento) {
-         return true; 
-      }
-  } 
-   return false; 
+//    for(let i = 0; i < array.length; i++) {
+//       if(array [i] === elemento) {
+//          return true; 
+//       }
+//   } 
+//    return false; 
+return array.includes(elemento);
 }
 
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
-   var suma = 0;
-   arrayOfNums.forEach(num1 => {
-      suma += num1;       
-   });
-   return suma;
+   // var suma = 0;
+   // arrayOfNums.forEach(num1 => {
+   //    suma += num1;       
+   // });
+   // return suma;
+   return arrayOfNums.reduce(function(acum, next) {return acum + next});
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -77,6 +80,7 @@ function promedioResultadosTest(resultadosTest) {
    }
    var Prom = acum / resultadosTest.length;
    return Prom;  
+  
 }
 
 function numeroMasGrande(arrayOfNums) {
