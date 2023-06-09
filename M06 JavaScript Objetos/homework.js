@@ -111,16 +111,16 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Este arreglo contiene objetos (post).
    // Cada post posee una propiedad llamada "likes". Esta propiedad es un número.
    // Debes sumar los likes de todos los post y retornar el resultado.
-   // var sum = 0 
-   // for (let i = 0; i < objetoUsuario.posts.length; i++) {
-   //    sum = sum + objetoUsuario.posts[i].likes;
-   // }git status
-   // return sum; 
-   var resultadoLikes = objetoUsuario.posts.reduce(function(acum, post){
-      return acum + post.likes; 
-   }, 0)
+   var sum = 0 
+   for (let i = 0; i < objetoUsuario.posts.length; i++) {
+      sum = sum + objetoUsuario.posts[i].likes;
+   }
+   return sum; 
+   // var resultadoLikes = objetoUsuario.posts.reduce(function(acum, post){
+   //    return acum + post.likes; 
+   // }, 0)
 
-   return resultadoLikes;
+   // return resultadoLikes;
 }
 
 
