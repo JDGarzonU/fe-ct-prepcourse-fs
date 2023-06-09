@@ -114,7 +114,7 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // var sum = 0 
    // for (let i = 0; i < objetoUsuario.posts.length; i++) {
    //    sum = sum + objetoUsuario.posts[i].likes;
-   // }
+   // }git status
    // return sum; 
    var resultadoLikes = objetoUsuario.posts.reduce(function(acum, post){
       return acum + post.likes; 
