@@ -10,14 +10,14 @@ class Persona {
       this.nombre = nombre;
       this.apellido = apellido;
       this.edad = edad;
-      this.domicilio = domicilio;
-      this.detalle = function(){
-         return {
-            nombre: this.nombre,
-            apellido: this.apellido,
-            edad: this.edad,
-            domicilio: this.domicilio  
-         }
+      this.domicilio = domicilio;      
+   }
+   detalle(){
+      return {
+         nombre: this.nombre,
+         apellido: this.apellido,
+         edad: this.edad,
+         domicilio: this.domicilio  
       }
    }
 }
@@ -35,7 +35,9 @@ function agregarMetodo() {
    // Este método toma la propiedad "nombre" y "edad", y devuelve el string:
    // Ejemplo: "Juan, 22 años".
    Persona.prototype.datos = function () {
-      return this.nombre + ', ' + this.edad + ' años';
+      return `${this.nombre}, ${this.edad} años`
+      //return this.nombre + ', ' + this.edad + ' años';
+      
    }
 }
 
